@@ -31,34 +31,44 @@
 若用户无法直接导入fasta文件，而直接在“Text Area”输入序列数据，如下图所示，要求输入时保证输入的格式标准(允许多序列输入)，单击“Submit”按钮成功导入所用序列，并在当前文件夹下将输入序列保存为temp.fa文件用于后续分析。
 ![导入文件](./img/multline.png "multline")
 为了便利用户的输入，本项目设计了右键菜单，实现了Copy、Paste、Cut、Select All等功能。
+
 ![导入文件](./img/right_menu.png "right_menu")
 ### ID
 示例：导入temp.fasta示例文件，点击“ID”按钮返回序列的ID信息如下：
+
 ![ID](./img/ID.png "ID")
 ### 序列长度
 示例：导入temp.fasta示例文件，点击“Length”按钮返回序列的长度信息如下：
+
 ![length](./img/Length.png "Length")
 ### 相对分子质量
 示例：导入temp.fasta示例文件，点击“Weight”按钮SeqAnalyze Tools将调用biopython中ProteinAnalysis进行运算，返回序列的相对分子质量信息如下：
+
 ![Weight](./img/Weight.png "Weight")
 ### 疏水性
 示例：导入temp.fasta示例文件，点击“Hydrophobicity”按钮基于 Hydropath. / Kyte & Doolittle 的疏水性定义，返回每个蛋白质的疏水性曲线如下：
+
 ![Hydrophobicity1](./img/Hydrophobicity1.png "Hydrophobicity1")
 ![Hydrophobicity2](./img/Hydrophobicity2.png "Hydrophobicity2")
 ### 氨基酸频率
 示例：导入temp.fasta示例文件，点击“Amino acid frequency”按钮返回每个蛋白质的各氨基酸的频率如下：
+
 ![aa_freq](./img/aa_freq.png "aa_freq")
 ### 亚细胞定位
 示例：导入temp.fasta示例文件，点击“Subcellular localization”按钮将通过使用WoLF PSORT网站(https://wolfpsort.hgc.jp/)进行亚细胞定位分析，返回每个蛋白质的亚细胞定位。
 由于WoLF PSORT网站的亚细胞定位分析需要用户选择蛋白质的生物体类型(Animal/Plant/Fungi)。SeqAnalyze Tools将会在用户进行亚细胞定位时针对每个蛋白质弹出organism_type选项框，用户可选择每个蛋白质的生物体类型如下：
+
 ![organism_type](./img/organism_type.png "organism_type")
 由于该部分基于WoLF PSORT网站分析，因此耗时较长，用户请耐心等待一段时间。
+
 ![wait](./img/wait.png "wait")
 注：该部分分析可能需要用户安装Chrome浏览器(压缩包中已附带chromedriver.exe文件,版本需对应，否则可能无法正常运行)。
 示例分析结果如下：
+
 ![sub_local](./img/sub_local.png "sub_local")
 ### 折叠速率预测
 示例：导入temp.fasta示例文件，点击“Folding rate prediction”按钮将通过使用FDserver网站(http://ibi.hzau.edu.cn/FDserver/cipred.php)进行蛋白质折叠速率预测，返回每个蛋白质的折叠速率如下：
+
 ![fold_rate](./img/fold_rate.png "fold_rate")
 
 ## 注意事项
