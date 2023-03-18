@@ -22,6 +22,7 @@
 ## 功能实现
 ### 主要窗口
 下图展示了SeqAnalyze Tools的主要界面，点击ID、Length、Weight、Hydrophobicity等按钮可以激活对应的分析功能。
+
 ![主要窗口](./img/main.png "main")
 ### 文件读取
 点击窗口中的“File”按钮后，激活下列文件导入窗口，点击“Browse”选择文件。
